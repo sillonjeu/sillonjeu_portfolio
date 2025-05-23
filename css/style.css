@@ -1,0 +1,536 @@
+:root {
+    --primary-color: #00D26A;
+    --background-color: #0A0F1C;
+    --text-color: #FFFFFF;
+    --subtext-color: #AAB1C4;
+    --card-bg: #121826;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.75;
+    padding: 0 1.5rem;
+    font-size: 1.125rem;
+  }
+  section {
+    padding-top: clamp(3rem, 8vw, 6rem);
+    margin-bottom: clamp(3rem, 8vw, 5rem);
+  }
+  
+/* header */
+  header {
+    text-align: center;
+    padding: 5rem 0 2rem;
+  }
+  header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  .highlight {
+    color: var(--primary-color);
+  }
+  header > *:not(:first-child) {
+    padding-top: 1.5rem;
+  }
+  header img {
+    width: 400px;
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  header img:hover {
+    transform: translateY(-10px);
+  }
+  header p {
+    margin-top: 1rem;
+    color: var(--subtext-color);
+  }
+  .floating-nav {
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #1B2432;
+    border-radius: 9999px;
+    padding: 0.5rem 2rem;
+    margin: 2rem auto;
+    width: fit-content;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .nav-dots {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .dot.blue { background-color: #007aff; }
+  .dot.green { background-color: #34c759; }
+  .dot.yellow { background-color: #ffcc00; }
+  .nav-items {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-items a {
+    color: #aab1c4;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+  .nav-items a:hover {
+    color: #ffffff;
+  }
+  
+/* section 타이틀 정의 */
+  section {
+    max-width: 768px;
+    margin: 3rem auto;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+/* 기술 스택 */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 기본 6개 고정 */
+    gap: 2rem;
+    margin-top: 1rem;
+    justify-items: stretch;
+  }
+  .skill-icon {
+    position: relative; 
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 80px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    border-radius: 12px;
+  }
+  .skill-icon img:hover {
+    transform: translateY(-10px);
+  }
+  .skill-icon .tooltip {
+    margin-top: 0rem;
+    background: #d1d5db;
+    color: #111827;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: clamp(0.45rem, 1.5vw, 0.65rem);
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(0);
+    transition: all 0.05s ease;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .skill-icon:hover .tooltip {
+    opacity: 1;
+  }
+  
+/* 경험 사항 */ 
+  #experience {
+    max-width: 768px;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .experience-title {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .experience-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  .experience-entry {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    align-items: start;
+    text-align: left; 
+  }
+  .experience-year {
+    font-size: 0.9rem;
+    color: var(--subtext-color);
+    font-weight: 500;
+    text-align: right; 
+    padding-top: 0.2rem;
+  }
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .experience-company {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .company-tag {
+    font-size: 0.7rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 9999px;
+    font-weight: 600;
+  }
+  .study-tag {
+    font-size: 0.7rem;
+    background-color: blue;
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 9999px;
+    font-weight: 600;
+
+  }
+  .school-tag {
+    font-size: 0.7rem;
+    background-color: #4F46E5;
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 9999px;
+    font-weight: 600;
+  }
+  .award-tag {
+    font-size: 0.7rem;
+    background-color: #F59E0B;
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 9999px;
+    font-weight: 600;
+  }
+  .hackathon-tag {
+    font-size: 0.7rem;
+    background-color: #10B981;
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 9999px;
+    font-weight: 600;
+  }
+  .experience-desc {
+    font-size: 0.95rem;
+    color: var(--subtext-color);
+    line-height: 1.5;
+  }
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  .tech-stack img {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+  }
+  .details-link {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.3rem;
+  }
+
+/* 프로젝트 모달 */
+  .project-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 2rem;
+    display: none;
+  }
+  .project-modal.active {
+    display: flex;
+  }
+  .project-modal-content {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+  .project-modal-content img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    display: block;
+  }
+  .project-modal-content h3 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    white-space: pre-line;
+  }
+  .project-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--subtext-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .project-modal-close:hover {
+    color: #fff;
+  }
+  .project-card {
+    background-color: var(--card-bg);
+    padding: 1.75rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    overflow: hidden;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+  }
+  .project-thumbnail {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    background-color: #ffffff;
+  }
+  .award-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+  .award-badge {
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .award-badge.gold {
+    background-color: #ffd700; 
+    color: #000;
+  }
+  .award-badge.silver {
+    background-color: #c0c0c0; 
+    color: #000;
+  }
+  .award-badge.bronze {
+    background-color: #cd7f32; 
+    color: #fff;
+  }
+  .modal-section-title {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+  }
+  .tech-stack-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .tech-stack-inline span {
+    background: #1e2533;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+  }
+  .info-grid a img {
+    width: 32px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  .info-grid a img:hover {
+    transform: scale(1.05);
+  }
+  .modal-details-list {
+    list-style: disc;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    line-height: 1.6;
+  }
+  .modal-details-list.number {
+    list-style-type: decimal;
+    padding-left: 1.2rem;
+    line-height: 1.8;
+  }
+  .modal-details-list.number > li {
+    margin-bottom: 1rem;
+  }
+  .modal-details-list.number ul {
+    list-style-type: disc;
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    line-height: 1.6;
+  }
+  .modal-details-list.number ul li {
+    font-size: 0.95rem;
+    font-weight: 200;
+  }
+  
+
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    padding: 1.75rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .card p {
+    color: var(--subtext-color);
+    font-size: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    font-size: 1rem;
+    color: var(--subtext-color);
+  }
+  
+  footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  /* 애니메이션 */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* 반응형 */
+  @media (max-width: 768px) {
+    body {
+      font-size: 1rem;
+    }
+  
+  /* header */
+    header h1 {
+      font-size: 1.5rem;
+    }
+    header img {
+      width: 150px;
+    }
+
+  /* 기술 스택 */
+    .skills-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+  /* 경험 사항 */ 
+    .experience-entry {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .experience-year {
+      text-align: center;
+    }
+    .tech-stack img {
+      width: 24px;
+      height: 24px;
+    }
+
+
+
+    .section-title {
+      font-size: 1.25rem;
+    }
+    .card {
+      padding: 1.25rem;
+    }
+    .skill-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
