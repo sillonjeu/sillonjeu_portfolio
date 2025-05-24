@@ -19,8 +19,8 @@
     font-size: 1.125rem;
   }
   section {
-    padding-top: clamp(3rem, 8vw, 6rem);
-    margin-bottom: clamp(3rem, 8vw, 5rem);
+    padding-top: clamp(10rem, 20vw, 15rem);
+    overflow: hidden;
   }
   
 /* header */
@@ -71,8 +71,8 @@
     gap: 0.5rem;
   }
   .dot {
-    width: 12px;
-    height: 12px;
+    width: clamp(0.4rem, 2vw, 1rem);
+    height: clamp(0.4rem, 2vw, 1rem);
     border-radius: 50%;
   }
   .dot.blue { background-color: #007aff; }
@@ -80,13 +80,13 @@
   .dot.yellow { background-color: #ffcc00; }
   .nav-items {
     display: flex;
-    gap: 1.5rem;
+    gap: clamp(1.0em, 0.5vw, 1.5rem);
   }
   .nav-items a {
     color: #aab1c4;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: clamp(0.6rem, 1.5vw, 0.9rem);
     transition: color 0.2s ease;
   }
   .nav-items a:hover {
@@ -107,10 +107,11 @@
 /* 기술 스택 */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 기본 6개 고정 */
+    grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
     margin-top: 1rem;
-    justify-items: stretch;
+    margin-bottom: 2rem;
+    justify-items:center;
   }
   .skill-icon {
     position: relative; 
@@ -159,17 +160,18 @@
     max-width: 768px;
     padding: 0 1rem;
     text-align: center;
+    padding-top: clamp(10rem, 20vw, 15rem);
   }
   .experience-title {
     text-align: center;
     color: var(--primary-color);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: clamp(1rem, 3vw, 2rem);
     margin-bottom: 0.5rem;
   }
   .experience-subtitle {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
     font-weight: 600;
     margin-bottom: 2rem;
   }
@@ -180,6 +182,13 @@
     margin-bottom: 2.5rem;
     align-items: start;
     text-align: left; 
+  }
+  .experience-year-first {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-align: right; 
+    padding-top: 0.2rem;
   }
   .experience-year {
     font-size: 0.9rem;
@@ -194,11 +203,11 @@
     gap: 0.5rem;
   }
   .experience-company {
-    font-size: 1.1rem;
+    font-size: clamp(0.8rem, 3vw, 1.1rem);
     font-weight: 700;
   }
   .company-tag {
-    font-size: 0.7rem;
+    font-size: clamp(0.5rem, 3vw, 0.7rem);
     background-color: var(--primary-color);
     color: #fff;
     padding: 0.2rem 0.4rem;
@@ -212,7 +221,6 @@
     padding: 0.2rem 0.4rem;
     border-radius: 9999px;
     font-weight: 600;
-
   }
   .school-tag {
     font-size: 0.7rem;
@@ -239,7 +247,7 @@
     font-weight: 600;
   }
   .experience-desc {
-    font-size: 0.95rem;
+    font-size: clamp(0.75rem, 3vw, 0.95rem);
     color: var(--subtext-color);
     line-height: 1.5;
   }
@@ -248,15 +256,17 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     margin: 0.5rem 0;
+    /* align-items: center;
+    justify-content: center; */
   }
   .tech-stack img {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     border-radius: 6px;
   }
   .details-link {
     color: var(--primary-color);
-    font-size: 0.85rem;
+    font-size: clamp(0.65rem, 3vw, 0.85rem);
     font-weight: 500;
     text-decoration: none;
     display: inline-block;
@@ -302,7 +312,7 @@
     display: block;
   }
   .project-modal-content h3 {
-    font-size: 1.75rem;
+    font-size: clamp(1rem, 3vw, 1.75rem);
     font-weight: 800;
     line-height: 1.4;
     margin-bottom: 1.5rem;
@@ -350,33 +360,53 @@
     margin-top: 0.75rem;
   }
   .award-badge {
-    padding: 0.2rem 0.5rem;
-    border-radius: 5px;
-    font-size: 0.8rem;
+    padding: clamp(0.2rem, 3vw, 0.3rem) clamp(0.5rem, 3vw, 0.7rem);;
+    border-radius: 8px;
+    font-size: clamp(0.55rem, 3vw, 0.85rem);
     font-weight: 600;
-    color: white;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6),
+                0 1px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
   }
+  /* 공통 hover 살짝 튀게 */
+  .award-badge:hover {
+    transform: scale(1.05);
+  }
+  /* 금색 배지 */
   .award-badge.gold {
-    background-color: #ffd700; 
-    color: #000;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    color: #3d2e00;
   }
+  /* 은색 배지 */
   .award-badge.silver {
-    background-color: #c0c0c0; 
-    color: #000;
+    background: linear-gradient(135deg, #d7d7d7, #eeeeee);
+    color: #333;
   }
+  /* 동색 배지 */
   .award-badge.bronze {
-    background-color: #cd7f32; 
+    background: linear-gradient(135deg, #c97b30, #f2c197);
     color: #fff;
   }
-  .modal-section-title {
+  .modal-section-title,
+  .modal-section-title-line {
     font-weight: 700;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 3vw, 1rem);
     color: var(--primary-color);
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .modal-section-title-content {
+    font-size: clamp(0.6rem, 3vw, 0.9rem);
+  }
+  .modal-section-title-line {
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    margin-top: 2rem;
   }
   .tech-stack-inline {
     display: flex;
@@ -389,7 +419,7 @@
     color: #fff;
     padding: 0.3rem 0.6rem;
     border-radius: 6px;
-    font-size: 0.85rem;
+    font-size: clamp(0.55rem, 3vw, 0.85rem);
     font-weight: 500;
   }
   .info-grid {
@@ -397,7 +427,7 @@
     grid-template-columns: 100px 1fr;
     gap: 0.5rem 1rem;
     margin-bottom: 1.5rem;
-    font-size: 0.95rem;
+    font-size: clamp(0.65rem, 3vw, 0.95rem);
   }
   .info-grid a img {
     width: 32px;
@@ -407,6 +437,10 @@
   }
   .info-grid a img:hover {
     transform: scale(1.05);
+  }
+  .info-grid div:nth-child(odd) {
+    font-weight: 400;
+    color: var(--subtext-color); 
   }
   .modal-details-list {
     list-style: disc;
@@ -421,6 +455,7 @@
   }
   .modal-details-list.number > li {
     margin-bottom: 1rem;
+    font-size: clamp(0.75rem, 3vw, 1.05rem);
   }
   .modal-details-list.number ul {
     list-style-type: disc;
@@ -429,15 +464,218 @@
     line-height: 1.6;
   }
   .modal-details-list.number ul li {
-    font-size: 0.95rem;
+    font-size: clamp(0.65rem, 3vw, 0.95rem);
     font-weight: 200;
   }
   
+/* 블로그 */ 
+  .blog-card-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .blog-card {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: white;
+    backdrop-filter: blur(10px);
+  }
+  .blog-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+  }
+  .blog-card-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+  .blog-card-content {
+    padding: 1.25rem;
+  }
+  .blog-card-title {
+    font-size: clamp(0.8rem, 3vw, 1.1rem);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  .blog-card-date {
+    font-size: clamp(0.6rem, 3vw, 0.9rem);
+    color: #ccc;
+    margin-bottom: 1rem;
+  }
+  .blog-card-more {
+    font-size: clamp(0.6rem, 3vw, 0.9rem);
+    font-weight: 500;
+    color: #bbb;
+    transition: color 0.2s ease;
+  }
+  .blog-card:hover .blog-card-more {
+    color: var(--primary-color);
+  }
 
+/* 피드백 */
+  #feedback img {
+    display: block;
+    margin: 2rem auto;
+    border-radius: 1.5rem;
+    width: clamp(160px, 40vw, 300px);
+    height: auto;
+  }
+  .review-modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .review-modal.active {
+    display: flex;
+  }
+  .review-modal-content {
+    background: var(--background-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 960px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  .close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  .review-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .review-card {
+    position: relative;
+    background-color: #d4d4d4; /* 기본 회색 배경 */
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+    font-size: 0.95rem;
+    color: #111;
+    line-height: 1.5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+  }
+  .review-card span {
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 0.75rem;     /* 작게 */
+    font-weight: 400;       /* 보통 */
+    color: #555;            /* 연한 회색 */
+    font-style: italic;     /* (선택) 기울임 */
+  }
+  .review-card:hover {
+    background-color: #fff; /* 호버 시 흰색 배경 */
+  }
+  .review-card .quote-icon {
+    position: sticky;
+    top: 1rem;
+    left: 1rem;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+  }
+
+  /* === 피드백 섹션 버튼 & 태그 === */
+  .feedback-tags {
+    text-align: center;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+  }
+  .feedback-tags span {
+    color: #ccc;
+    font-size: clamp(0.6rem, 3vw, 0.9rem);
+    background-color: #1e1e1e;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+  }
+  .review-btn {
+    background: white;
+    color: black;
+    padding: clamp(0.6rem, 3vw, 0.9rem) clamp(1.2rem, 3vw, 1.5rem);
+    border-radius: 999px;
+    font-size: clamp(0.7rem, 3vw, 1.0rem);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin: 2rem auto 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .feedback-tooltip {
+    position: absolute;
+    right: 110%; /* 왼쪽에 배치 */
+    background-color: #333;
+    color: #fff;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+  /* 마우스 호버 시 보이게 */
+  .floating-feedback-btn:hover .feedback-tooltip {
+    opacity: 1;
+  }
+
+
+  /* === 오른쪽 하단 고정 버튼 === */
+  .floating-feedback-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: white;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  .floating-feedback-btn img {
+    width: 24px;
+    height: 24px;
+  }
 
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
   
@@ -466,10 +704,9 @@
   footer {
     text-align: center;
     padding: 3rem 1rem;
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 3vw, 1rem);
     color: var(--subtext-color);
   }
-  
   footer a {
     color: var(--primary-color);
     text-decoration: none;
@@ -482,7 +719,6 @@
     transform: translateY(30px);
     transition: all 0.6s ease;
   }
-  
   .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
@@ -502,9 +738,14 @@
       width: 150px;
     }
 
+  /* 떠다니는 목차 */ 
+    .nav-dots {
+      display: none;
+    }
+
   /* 기술 스택 */
     .skills-grid {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
 
   /* 경험 사항 */ 
@@ -512,23 +753,37 @@
       grid-template-columns: 1fr;
       text-align: center;
     }
-    .experience-year {
+    .experience-year, 
+    .experience-year-first {
       text-align: center;
     }
-    .tech-stack img {
-      width: 24px;
-      height: 24px;
+    .tech-stack {
+      align-items: center;
+      justify-content: center;
     }
-
-
-
+    .tech-stack img {
+      width: 28px;
+      height: 28px;
+    }
     .section-title {
       font-size: 1.25rem;
     }
     .card {
       padding: 1.25rem;
     }
+    .card-grid {
+      grid-template-columns: 1fr; /* 모바일에서는 1열 */
+    }
+    .blog-card-grid {
+      grid-template-columns: 1fr; /* 모바일에서는 1열 */
+    }
     .skill-icon {
+      width: 60px;
+      height: 60px;
+    }
+
+  /* 오른쪽 하단 플로팅 버튼 */
+    .floating-feedback-btn {
       width: 40px;
       height: 40px;
     }
