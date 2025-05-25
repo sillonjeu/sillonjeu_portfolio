@@ -600,9 +600,7 @@
     background-color: #fff; /* 호버 시 흰색 배경 */
   }
   .review-card .quote-icon {
-    position: sticky;
-    top: 1rem;
-    left: 1rem;
+    position: relative;
     width: 20px;
     height: 20px;
     opacity: 0.6;
