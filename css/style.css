@@ -372,6 +372,15 @@
     text-shadow: 0 0 1px rgba(0,0,0,0.2);
     transition: transform 0.2s ease;
   }
+  .link-icons {
+    display: flex;
+    gap: 10px; /* 아이콘 사이 간격 */
+    align-items: center;
+  }
+  .link-icons img {
+    width: 24px; /* 필요 시 조절 */
+    height: 24px;
+  }  
   /* 공통 hover 살짝 튀게 */
   .award-badge:hover {
     transform: scale(1.05);
