@@ -1,596 +1,933 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5BEFPNB6JE"></script>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5BEFPNB6JE"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5BEFPNB6JE');
+      gtag("config", "G-5BEFPNB6JE");
     </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>여은동 포트폴리오</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여은동 포트폴리오</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-<!-- 상단 -->
-  <header class="fade-in">
-    <h1>안녕하세요,<br>프론트엔드 개발자 <span class="highlight">여은동</span>입니다.</h1>
-    <img src="assets/header/my_profile.png" alt="프로필 이미지"/>
-    <p>Flutter를 중심으로 앱을 제작해왔습니다.<br>프로젝트 디딤돌 사이의 빈틈을 채우고, 옥의 티를 정리합니다.</p>
-  </header>
+  <body>
+    <!-- 상단 -->
+    <header class="fade-in">
+      <h1>
+        안녕하세요,<br />프론트엔드 개발자
+        <span class="highlight">여은동</span>입니다.
+      </h1>
+      <img src="assets/header/my_profile.png" alt="프로필 이미지" />
+      <p>
+        Flutter를 중심으로 앱을 제작해왔습니다.<br />프로젝트 디딤돌 사이의
+        빈틈을 채우고, 옥의 티를 정리합니다.
+      </p>
+    </header>
 
-<!-- 떠다니는 목차 -->
-  <nav class="floating-nav">
-    <div class="nav-dots">
-      <span class="dot blue"></span>
-      <span class="dot green"></span>
-      <span class="dot yellow"></span>
-    </div>
-    <div class="nav-items">
-      <a href="#skills">기술</a>
-      <a href="#experience">경험 사항</a>
-      <a href="#projects">프로젝트</a>
-      <a href="#blog">블로그</a>
-      <a href="#feedback">피드백</a>
-    </div>
-  </nav>
+    <!-- 떠다니는 목차 -->
+    <nav class="floating-nav">
+      <div class="nav-dots">
+        <span class="dot blue"></span>
+        <span class="dot green"></span>
+        <span class="dot yellow"></span>
+      </div>
+      <div class="nav-items">
+        <a href="#skills">기술</a>
+        <a href="#experience">경험 사항</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#blog">블로그</a>
+        <a href="#feedback">피드백</a>
+      </div>
+    </nav>
 
-<!-- 기술 스택 -->
-  <section class="fade-in" id="skills">
-    <div class="experience-title">기술 스택</div>
-    <h2 class="experience-subtitle">
-      업무에 필요한 다양한 도구들을 익히려 노력합니다.
-    </h2>
-    <div class="skills-grid">
-        <div class="skill-icon"><img src="assets/skills/js.png" alt="js" /><span class="tooltip">JavaScript</span></div>
-        <div class="skill-icon"><img src="assets/skills/react.png" alt="react" /><span class="tooltip">React</span></div>
-        <div class="skill-icon"><img src="assets/skills/react-native.png" alt="react-native" /><span class="tooltip">React-Native</span></div>
-        <div class="skill-icon"><img src="assets/skills/flutter.png" alt="flutter" title="Flutter"/><span class="tooltip">Flutter</span></div>
-        <div class="skill-icon"><img src="assets/skills/mysql.png" alt="mysql" /><span class="tooltip">Mysql</span></div>
-        <div class="skill-icon"><img src="assets/skills/github.png" alt="github" /><span class="tooltip">Github</span></div>
-        <div class="skill-icon"><img src="assets/skills/docker.png" alt="docker" /><span class="tooltip">Docker</span></div>
-        <div class="skill-icon"><img src="assets/skills/figma.png" alt="figma" /><span class="tooltip">Figma</span></div>
-        <div class="skill-icon"><img src="assets/skills/vsc.png" alt="vsc" /><span class="tooltip">VSC</span></div>
-        <div class="skill-icon"><img src="assets/skills/notion.png" alt="notion" /><span class="tooltip">Notion</span></div>
-        <div class="skill-icon"><img src="assets/skills/slack.png" alt="slack " /><span class="tooltip">Slack</span></div>
-    </div>
-  </section>
+    <!-- 기술 스택 -->
+    <section class="fade-in" id="skills">
+      <div class="experience-title">기술 스택</div>
+      <h2 class="experience-subtitle">
+        업무에 필요한 다양한 도구들을 익히려 노력합니다.
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-icon">
+          <img src="assets/skills/js.png" alt="js" /><span class="tooltip"
+            >JavaScript</span
+          >
+        </div>
+        <div class="skill-icon">
+          <img src="assets/skills/react.png" alt="react" /><span class="tooltip"
+            >React</span
+          >
+        </div>
+        <div class="skill-icon">
+          <img src="assets/skills/react-native.png" alt="react-native" /><span
+            class="tooltip"
+            >React-Native</span
+          >
+        </div>
+        <div class="skill-icon">
+          <img
+            src="assets/skills/flutter.png"
+            alt="flutter"
+            title="Flutter"
+          /><span class="tooltip">Flutter</span>
+        </div>
+        <div class="skill-icon">
+          <img src="assets/skills/mysql.png" alt="mysql" /><span class="tooltip"
+            >Mysql</span
+          >
+        </div>
+        <div class="skill-icon">
+          <img src="assets/skills/github.png" alt="github" /><span
+            class="tooltip"
+            >Github</span
+          >
+        </div>
+        <div class="skill-icon">
+          <img src="assets/skills/docker.png" alt="docker" /><span
+            class="tooltip"
+            >Docker</span
+          >
+        </div>
+        <div class="skill-icon">
+          <img src="assets/skills/figma.png" alt="figma" /><span class="tooltip"
+            >Figma</span
+          >
+        </div>
+        <div class="skill-icon">
+          <img src="assets/skills/vsc.png" alt="vsc" /><span class="tooltip"
+            >VSC</span
+          >
+        </div>
+        <div class="skill-icon">
+          <img src="assets/skills/notion.png" alt="notion" /><span
+            class="tooltip"
+            >Notion</span
+          >
+        </div>
+        <div class="skill-icon">
+          <img src="assets/skills/slack.png" alt="slack " /><span
+            class="tooltip"
+            >Slack</span
+          >
+        </div>
+      </div>
+    </section>
 
-<!-- 경험 사항 -->
-  <section class="fade-in" id="experience">
-    <div class="experience-title">경험 사항</div>
-    <h2 class="experience-subtitle">
-      다양한 경험과 활동을 통해<br>견해와 노하우를 쌓고 있습니다.
-    </h2>
-  
-    <div class="experience-entry">
-      <div class="experience-year-first">* 2025.04 - 현재</div>
-      <div class="experience-content">
-        <div class="experience-company">
+    <!-- 경험 사항 -->
+    <section class="fade-in" id="experience">
+      <div class="experience-title">경험 사항</div>
+      <h2 class="experience-subtitle">
+        다양한 경험과 활동을 통해<br />견해와 노하우를 쌓고 있습니다.
+      </h2>
+
+      <div class="experience-entry">
+        <div class="experience-year-first">* 2025.04 - 현재</div>
+        <div class="experience-content">
+          <div class="experience-company">
             신한투자증권 프로디지털 아카데미 6기
             <span class="study-tag">교육</span>
-        </div>
-        <div class="experience-desc">신한투자증권의 디지털 혁신을 이끌 인재를 양성하는 실무 중심 교육 과정</div>
-        <a class="details-link" >› 관련 내용 보기</a>
-        <div class="tech-stack">
-            <a href="https://futurechosun.com/archives/119285" target="_blank" rel="noopener">
-              <img src="assets/experience/news.png" alt="news" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=ODlDvE-6vlA" target="_blank" rel="noopener">
-              <img src="assets/experience/youtube.png" alt="youtube" />
-            </a>
-            <a href="https://github.com/sillonjeu/sillonjeu_portfolio" target="_blank" rel="noopener">
-              <img src="assets/skills/github.png" alt="github" />
-            </a>
-            <a href="https://sillonjeu.tistory.com/category/%EC%8B%A0%ED%95%9C%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C%20%ED%94%84%EB%A1%9C%20%EB%94%94%EC%A7%80%ED%84%B8%20%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8%206%EA%B8%B0" target="_blank" rel="noopener">
-              <img src="assets/experience/tistory.png" alt="tistory" />
-            </a>
-        </div>
-      </div>
-    </div>
-  
-    <div class="experience-entry">
-      <div class="experience-year">* 2024.12 – 2025.01</div>
-      <div class="experience-content">
-        <div class="experience-company">국제전기통신연합(ITU) 제네바 본부 학술 연수 <span class="company-tag">연수</span> </div>
-        <div class="experience-desc">
-        스위스 제네바 소재 국제전기통신연합(ITU) 본부에서 진행된 글로벌 ICT 정책과 표준화 동향에 대한 학술 연수 프로그램
-        </div>
-        <a class="details-link" >› 관련 내용 보기</a>
-        <div class="tech-stack">
-            <a href="https://www.youtube.com/watch?v=ZqUNgNBHl0o" target="_blank" rel="noopener">
-              <img src="assets/experience/youtube.png" alt="youtube" />
-            </a>
-        </div>
-      </div>
-    </div>
-  
-    <div class="experience-entry">
-      <div class="experience-year">✳ 2024.02 – 2024.08</div>
-      <div class="experience-content">
-        <div class="experience-company">9oormthon-univ 2기 <span class="study-tag">교육</span> </div>
-        <div class="experience-desc">
-        카카오와 구름, 그리고 벚꽃과 단풍이 함께하는 전국 대학 IT 연합 동아리
-        </div>
-        <a class="details-link" >› 관련 내용 보기</a>
-        <div class="tech-stack">
-            <a href="https://www.thebigdata.co.kr/view.php?ud=2024032815233767016cf2d78c68_23" target="_blank" rel="noopener">
-              <img src="assets/experience/news.png" alt="news" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=WKkZRSR6xyY&t=71s" target="_blank" rel="noopener">
-              <img src="assets/experience/youtube.png" alt="youtube" />
-            </a>
-            <a href="https://github.com/9oormthon-univ/2024_BEOTKKOTTHON_TEAM_9_FE" target="_blank" rel="noopener">
-              <img src="assets/skills/github.png" alt="github" />
-            </a>
-            <a href="https://sillonjeu.tistory.com/category/%EB%B4%84%EB%A9%8D" target="_blank" rel="noopener">
-              <img src="assets/experience/tistory.png" alt="tistory" />
-            </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-<!-- 프로젝트 -->
-  <section class="fade-in" id="projects">
-    <div class="experience-title">프로젝트</div>
-    <h2 class="experience-subtitle">
-      해커톤, 공모전, 교내 대회 등<br>많은 프로젝트를 진행하며 역량을 키웠습니다.
-    </h2>
-
-    <!-- 다른 카드들 반복 -->
-    <div class="card-grid">
-          <div class="project-card" data-project="project1">
-            <img src="assets/projects/life_bookshelf.png" alt="인생책장 이미지" class="project-thumbnail" />
-            <h3>인생책장  
-              <span class="hackathon-tag">해커톤</span> 
-              <span class="school-tag">교내대회</span>
-            </h3>
-            <div class="experience-desc">생성형 AI를 활용한 구술 자서전 애플리케이션 개발</div>
-            <div class="award-badges">
-                <div class="award-badge gold">COSS 제주도지사상</div>
-                <div class="award-badge silver">종합설계 최우수상</div>
-                <div class="award-badge bronze">산학연계1 장려상</div>
-                <div class="award-badge bronze">산학연계2 장려상</div>
-            </div>
           </div>
-      <div class="project-card" data-project="project2">
-        <img src="assets/projects/bommeong.png" alt="봄멍 이미지" class="project-thumbnail" />
-        <h3>봄멍 <span class="hackathon-tag">해커톤</span> </h3>
-        <div class="experience-desc">강아지와 직접 대화하며, 입양까지 독려하는 애플리케이션 개발</div>
-        <div class="award-badges">
+          <div class="experience-desc">
+            신한투자증권의 디지털 혁신을 이끌 인재를 양성하는 실무 중심 교육
+            과정
+          </div>
+          <a class="details-link">› 관련 내용 보기</a>
+          <div class="tech-stack">
+            <a
+              href="https://futurechosun.com/archives/119285"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/news.png" alt="news" />
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=ODlDvE-6vlA"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/youtube.png" alt="youtube" />
+            </a>
+            <a
+              href="https://github.com/sillonjeu/sillonjeu_portfolio"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/skills/github.png" alt="github" />
+            </a>
+            <a
+              href="https://sillonjeu.tistory.com/category/%EC%8B%A0%ED%95%9C%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C%20%ED%94%84%EB%A1%9C%20%EB%94%94%EC%A7%80%ED%84%B8%20%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8%206%EA%B8%B0"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/tistory.png" alt="tistory" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-entry">
+        <div class="experience-year">* 2024.12 – 2025.01</div>
+        <div class="experience-content">
+          <div class="experience-company">
+            국제전기통신연합(ITU) 제네바 본부 학술 연수
+            <span class="company-tag">연수</span>
+          </div>
+          <div class="experience-desc">
+            스위스 제네바 소재 국제전기통신연합(ITU) 본부에서 진행된 글로벌 ICT
+            정책과 표준화 동향에 대한 학술 연수 프로그램
+          </div>
+          <a class="details-link">› 관련 내용 보기</a>
+          <div class="tech-stack">
+            <a
+              href="https://www.youtube.com/watch?v=ZqUNgNBHl0o"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/youtube.png" alt="youtube" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-entry">
+        <div class="experience-year">✳ 2024.02 – 2024.08</div>
+        <div class="experience-content">
+          <div class="experience-company">
+            9oormthon-univ 2기 <span class="study-tag">교육</span>
+          </div>
+          <div class="experience-desc">
+            카카오와 구름, 그리고 벚꽃과 단풍이 함께하는 전국 대학 IT 연합
+            동아리
+          </div>
+          <a class="details-link">› 관련 내용 보기</a>
+          <div class="tech-stack">
+            <a
+              href="https://www.thebigdata.co.kr/view.php?ud=2024032815233767016cf2d78c68_23"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/news.png" alt="news" />
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=WKkZRSR6xyY&t=71s"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/youtube.png" alt="youtube" />
+            </a>
+            <a
+              href="https://github.com/9oormthon-univ/2024_BEOTKKOTTHON_TEAM_9_FE"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/skills/github.png" alt="github" />
+            </a>
+            <a
+              href="https://sillonjeu.tistory.com/category/%EB%B4%84%EB%A9%8D"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/tistory.png" alt="tistory" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 프로젝트 -->
+    <section class="fade-in" id="projects">
+      <div class="experience-title">프로젝트</div>
+      <h2 class="experience-subtitle">
+        해커톤, 공모전, 교내 대회 등<br />많은 프로젝트를 진행하며 역량을
+        키웠습니다.
+      </h2>
+
+      <!-- 다른 카드들 반복 -->
+      <div class="card-grid">
+        <div class="project-card" data-project="project1">
+          <img
+            src="assets/projects/life_bookshelf.png"
+            alt="인생책장 이미지"
+            class="project-thumbnail"
+          />
+          <h3>
+            인생책장
+            <span class="hackathon-tag">해커톤</span>
+            <span class="school-tag">교내대회</span>
+          </h3>
+          <div class="experience-desc">
+            생성형 AI를 활용한 구술 자서전 애플리케이션 개발
+          </div>
+          <div class="award-badges">
+            <div class="award-badge gold">COSS 제주도지사상</div>
+            <div class="award-badge silver">종합설계 최우수상</div>
+            <div class="award-badge bronze">산학연계1 장려상</div>
+            <div class="award-badge bronze">산학연계2 장려상</div>
+          </div>
+        </div>
+        <div class="project-card" data-project="project2">
+          <img
+            src="assets/projects/bommeong.png"
+            alt="봄멍 이미지"
+            class="project-thumbnail"
+          />
+          <h3>봄멍 <span class="hackathon-tag">해커톤</span></h3>
+          <div class="experience-desc">
+            강아지와 직접 대화하며, 입양까지 독려하는 애플리케이션 개발
+          </div>
+          <div class="award-badges">
             <div class="award-badge gold">제주톤 대상</div>
             <div class="award-badge silver">벚꽃톤 우수상</div>
-        </div>
-      </div>
-      <div class="project-card" data-project="project3">
-        <img src="assets/projects/dgdr.png" alt="동고동락 이미지" class="project-thumbnail" />
-        <h3>동고동락 <span class="award-tag">공모전</span> </h3>
-        <div class="experience-desc">위성 dataset을 건물, 비건물로 segmentation 하는 대회</div>
-        <div class="award-badges">
-            <div class="award-badge silver">SW중심대학협의회 4등</div>
-        </div>
-      </div>
-      <div class="project-card" data-project="project4">
-        <img src="assets/projects/Ersentinel.png" alt="응급실 알리미 이미지" class="project-thumbnail" />
-        <h3>응급실 혼잡도 알리미 <span class="award-tag">공모전</span> </h3>
-        <div class="experience-desc">응급실 혼잡도와 소아 진료가 가능한 응급실을 알려주는 웹/앱 개발</div>
-        <div class="award-badges">
-            <div class="award-badge bronze">SW개발보안 경진대회 본선 진출</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-<!-- 모달 -->
- <!-- 인생책장 -->
-  <div class="project-modal" id="modal-project1">
-    <div class="project-modal-content">
-      <button class="project-modal-close">&times;</button>
-      <h3>인생책장</h3>
-      <img src="assets/modal/life-librarians.png" alt="인생책장" />
-  
-      <p class="modal-section-title">프로젝트 설명</p>
-      <p class="modal-section-title-content">고령층 우울증의 유병률이 증가하고 있는 상황에서, 충분한 사회적 지원 시스템의 부재가 문제 해결을 어렵게 하고 있다. 자서전 작성이 노인 우울증 감소에 효과적임을 확인하였으므로, 이를 기반으로 (주)이분의일코리아와 협력하여, 생성형 AI를 활용한 구술 자서전 애플리케이션 개발을 추진하고자 했다.</p>
-  
-      <p class="modal-section-title">기술 스택</p>
-      <div class="tech-stack-inline">
-        <span>Flutter</span>
-        <span>Spring</span>
-        <span>AWS</span>
-        <span>Azure Prompt Flow</span>
-      </div>
-  
-      <p class="modal-section-title">기본 정보</p>
-      <div class="info-grid">
-        <div>참여인원</div><div>4명 (FE 3, BE 1)</div>
-        <div>기간</div><div>2024.03 ~ 2025.02</div>
-        <div>관련 링크</div>
-          <div class="link-icons">
-          <a href="https://github.com/life-librarians/life-bookshelf-client" target="_blank" rel="noopener">
-            <img src="assets/skills/github.png" alt="github" />
-          </a>
-          <a href="https://www.youtube.com/watch?v=43tP67XdrhM&t=171s" target="_blank" rel="noopener">
-            <img src="assets/experience/youtube.png" alt="youtube" />
-          </a>
           </div>
+        </div>
+        <div class="project-card" data-project="project3">
+          <img
+            src="assets/projects/dgdr.png"
+            alt="동고동락 이미지"
+            class="project-thumbnail"
+          />
+          <h3>동고동락 <span class="award-tag">공모전</span></h3>
+          <div class="experience-desc">
+            위성 dataset을 건물, 비건물로 segmentation 하는 대회
+          </div>
+          <div class="award-badges">
+            <div class="award-badge silver">SW중심대학협의회 4등</div>
+          </div>
+        </div>
+        <div class="project-card" data-project="project4">
+          <img
+            src="assets/projects/Ersentinel.png"
+            alt="응급실 알리미 이미지"
+            class="project-thumbnail"
+          />
+          <h3>응급실 혼잡도 알리미 <span class="award-tag">공모전</span></h3>
+          <div class="experience-desc">
+            응급실 혼잡도와 소아 진료가 가능한 응급실을 알려주는 웹/앱 개발
+          </div>
+          <div class="award-badges">
+            <div class="award-badge bronze">SW개발보안 경진대회 본선 진출</div>
+          </div>
+        </div>
       </div>
-  
-      <p class="modal-section-title-line">수행 역할(FE)</p>
-      <ol class="modal-details-list number">
-        <li>
+    </section>
+
+    <!-- 모달 -->
+    <!-- 인생책장 -->
+    <div class="project-modal" id="modal-project1">
+      <div class="project-modal-content">
+        <button class="project-modal-close">&times;</button>
+        <h3>인생책장</h3>
+        <img src="assets/modal/life-librarians.png" alt="인생책장" />
+
+        <p class="modal-section-title">프로젝트 설명</p>
+        <p class="modal-section-title-content">
+          고령층 우울증의 유병률이 증가하고 있는 상황에서, 충분한
+          사회적 지원 시스템의 부재가 문제 해결을 어렵게 하고 있다.
+          자서전 작성이 노인 우울증 감소에 효과적임을 확인하였으므로, 이를
+          기반으로 (주)이분의일코리아와 협력하여,
+          생성형 AI를 활용한 구술 자서전 애플리케이션 개발을 추진하고자 했다.
+        </p>
+
+        <p class="modal-section-title">기술 스택</p>
+        <div class="tech-stack-inline">
+          <span>Flutter</span>
+          <span>Spring</span>
+          <span>AWS</span>
+          <span>Azure Prompt Flow</span>
+        </div>
+
+        <p class="modal-section-title">기본 정보</p>
+        <div class="info-grid">
+          <div>참여인원</div>
+          <div>4명 (FE 3, BE 1)</div>
+          <div>기간</div>
+          <div>2024.03 ~ 2025.02</div>
+          <div>관련 링크</div>
+          <div class="link-icons">
+            <a
+              href="https://github.com/life-librarians/life-bookshelf-client"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/skills/github.png" alt="github" />
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=43tP67XdrhM&t=171s"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/youtube.png" alt="youtube" />
+            </a>
+          </div>
+        </div>
+
+        <p class="modal-section-title-line">수행 역할(FE)</p>
+        <ol class="modal-details-list number">
+          <li>
             온보딩 페이지 개발
-          <ul>
-            <li>사용자의 상세 정보를 입력받는 기능 구현</li>
-            <li>입력된 정보를 바탕으로 생성형 AI를 활용해 사용자 맞춤형 자서전 주제를 생성하는 기능 구현</li>
-          </ul>
-        </li>
-        <li>
+            <ul>
+              <li>사용자의 상세 정보를 입력받는 기능 구현</li>
+              <li>
+                입력된 정보를 바탕으로 생성형 AI를 활용해 사용자 맞춤형 자서전
+                주제를 생성하는 기능 구현
+              </li>
+            </ul>
+          </li>
+          <li>
             교정/교열 기능 개발
-          <ul>
-            <li>생성형 AI가 수정한 내용을 초록색 글씨, 사용자가 입력한 원래 내용을 빨간색 글씨로 표시하여, 사용자가 AI의 수정을 원하지 않을 경우 원래 내용을 유지할 수 있도록 기능 구현</li>
-          </ul>
-        </li>
-        <li>
+            <ul>
+              <li>
+                생성형 AI가 수정한 내용을 초록색 글씨, 사용자가 입력한 원래
+                내용을 빨간색 글씨로 표시하여, 사용자가 AI의 수정을 원하지 않을
+                경우 원래 내용을 유지할 수 있도록 기능 구현
+              </li>
+            </ul>
+          </li>
+          <li>
             Azure 프롬프트 플로우 활용
-          <ul>
-            <li>챕터 생성 과정에서 프롬프트 플로우를 적용하여, p-value가 3점 이상인 결과물만 사용하여 사용자의 의도와 다르게 내용이 벗어나지 않도록 설정</li>
-          </ul>
-        </li>
-      </ol>
+            <ul>
+              <li>
+                챕터 생성 과정에서 프롬프트 플로우를 적용하여, p-value가 3점
+                이상인 결과물만 사용하여 사용자의 의도와 다르게 내용이 벗어나지
+                않도록 설정
+              </li>
+            </ul>
+          </li>
+        </ol>
 
-      <p class="modal-section-title">활동 사진</p>
-      <img src="assets/modal/life-librarians-playing.png" alt="인생책장_활동사진" />
-
+        <p class="modal-section-title">활동 사진</p>
+        <img
+          src="assets/modal/life-librarians-playing.png"
+          alt="인생책장_활동사진"
+        />
+      </div>
     </div>
-  </div>
 
-   <!-- 봄멍 -->
-   <div class="project-modal" id="modal-project2">
-    <div class="project-modal-content">
-      <button class="project-modal-close">&times;</button>
-      <h3>봄멍</h3>
-      <img src="assets/modal/9oormthon-univ.png" alt="봄멍" />
-  
-      <p class="modal-section-title">프로젝트 설명</p>
-      <p class="modal-section-title-content">유기견 입양에 대한 관심이 점점 높아지고 있지만, 유기견과 반려인이 매칭되는 확률은 여전히 낮다.  
-        이에 매칭확률을 높이고자 “포인핸드”에서는 강아지의 성격, 각종 좋아하는 것 등 다양한 정보를 제공해주고자 노력하지만, 입양을 고민하는 이들에겐 아직 어렵게 다가오고 있다.
-        이를 해결하기 위해 생성형 AI를 활용한 “유기견의 페르소나”를 만들어, 유기견과 직접 대화하는 듯한 기능을 통해 유기견과 예비 반려인이 매칭할 수 있는 여지를 높이고자 했다.
-        최종적으로는 유기견을 관심있게 바라볼 수 있는 새로운 입양 시스템을 만들고자 했다.</p>
-  
-      <p class="modal-section-title">기술 스택</p>
-      <div class="tech-stack-inline">
-        <span>Flutter</span>
-        <span>React</span>
-        <span>Spring</span>
-        <span>Flask</span>
-        <span>AWS S3, EC2</span>
-      </div>
-  
-      <p class="modal-section-title">기본 정보</p>
-      <div class="info-grid">
-        <div>참여인원</div><div>6명 (FE 2, BE 2, PM 1, UI 1)</div>
-        <div>기간</div><div>2024.02 ~ 2024.08</div>
-        <div>관련 링크</div>
-        <div class="link-icons">
-          <a href="https://github.com/9oormthon-univ/2024_BEOTKKOTTHON_TEAM_9_FE" target="_blank" rel="noopener">
-            <img src="assets/skills/github.png" alt="github" />
-          </a>
-          <a href="https://www.youtube.com/watch?v=WKkZRSR6xyY&t=71s" target="_blank" rel="noopener">
-            <img src="assets/experience/youtube.png" alt="youtube" />
-          </a>
-          <a href="https://www.youtube.com/watch?v=-tKYqBW6Vk8&t=295s" target="_blank" rel="noopener">
-            <img src="assets/experience/youtube.png" alt="youtube" />
-          </a>
+    <!-- 봄멍 -->
+    <div class="project-modal" id="modal-project2">
+      <div class="project-modal-content">
+        <button class="project-modal-close">&times;</button>
+        <h3>봄멍</h3>
+        <img src="assets/modal/9oormthon-univ.png" alt="봄멍" />
+
+        <p class="modal-section-title">프로젝트 설명</p>
+        <p class="modal-section-title-content">
+          유기견 입양에 대한 관심이 점점 높아지고 있지만, 유기견과 반려인이
+          매칭되는 확률은 여전히 낮다. 이에 매칭확률을 높이고자 “포인핸드”에서는
+          강아지의 성격, 각종 좋아하는 것 등 다양한 정보를 제공해주고자
+          노력하지만, 입양을 고민하는 이들에겐 아직 어렵게 다가오고 있다. 이를
+          해결하기 위해 생성형 AI를 활용한 “유기견의 페르소나”를 만들어,
+          유기견과 직접 대화하는 듯한 기능을 통해 유기견과 예비 반려인이 매칭할
+          수 있는 여지를 높이고자 했다. 최종적으로는 유기견을 관심있게 바라볼 수
+          있는 새로운 입양 시스템을 만들고자 했다.
+        </p>
+
+        <p class="modal-section-title">기술 스택</p>
+        <div class="tech-stack-inline">
+          <span>Flutter</span>
+          <span>React</span>
+          <span>Spring</span>
+          <span>Flask</span>
+          <span>AWS S3, EC2</span>
         </div>
-      </div>
-  
-      <p class="modal-section-title-line">수행 역할(FE)</p>
-      <ol class="modal-details-list number">
-        <li>
+
+        <p class="modal-section-title">기본 정보</p>
+        <div class="info-grid">
+          <div>참여인원</div>
+          <div>6명 (FE 2, BE 2, PM 1, UI 1)</div>
+          <div>기간</div>
+          <div>2024.02 ~ 2024.08</div>
+          <div>관련 링크</div>
+          <div class="link-icons">
+            <a
+              href="https://github.com/9oormthon-univ/2024_BEOTKKOTTHON_TEAM_9_FE"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/skills/github.png" alt="github" />
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=WKkZRSR6xyY&t=71s"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/youtube.png" alt="youtube" />
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=-tKYqBW6Vk8&t=295s"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/youtube.png" alt="youtube" />
+            </a>
+          </div>
+        </div>
+
+        <p class="modal-section-title-line">수행 역할(FE)</p>
+        <ol class="modal-details-list number">
+          <li>
             Flutter를 중심으로 APP의 FE 역할 수행
-          <ul>
-            <li>입양 신청 기능 구현(전자서명, 사용자 정보 등록)</li>
-            <li>채팅 기능 최종 수정(유기견마다 독립적인 채팅방 만들기, 랜덤으로 채팅할 시에는 입양 신청 하지 못하도록 하기)</li>
-          </ul>
-        </li>
-        <li>
+            <ul>
+              <li>입양 신청 기능 구현(전자서명, 사용자 정보 등록)</li>
+              <li>
+                채팅 기능 최종 수정(유기견마다 독립적인 채팅방 만들기, 랜덤으로
+                채팅할 시에는 입양 신청 하지 못하도록 하기)
+              </li>
+            </ul>
+          </li>
+          <li>
             React를 중심으로 WEB의 FE 역할 수행
-          <ul>
-            <li>메인 화면과 입양 신청 확인 페이지를 반응형 웹으로 구현하여, 최적화된 화면 제공</li>
-          </ul>
-        </li>
-      </ol>
+            <ul>
+              <li>
+                메인 화면과 입양 신청 확인 페이지를 반응형 웹으로 구현하여,
+                최적화된 화면 제공
+              </li>
+            </ul>
+          </li>
+        </ol>
 
-      <p class="modal-section-title">활동 사진</p>
-      <img src="assets/modal/9oormthon-univ-playing.png" alt="봄멍_활동사진" />
-
+        <p class="modal-section-title">활동 사진</p>
+        <img
+          src="assets/modal/9oormthon-univ-playing.png"
+          alt="봄멍_활동사진"
+        />
+      </div>
     </div>
-  </div>
 
-  <!-- 동고동락 -->
-  <div class="project-modal" id="modal-project3">
-    <div class="project-modal-content">
-      <button class="project-modal-close">&times;</button>
-      <h3>동고동락</h3>
-      <img src="assets/modal/building_segmentation.png" alt="동고동락" />
-  
-      <p class="modal-section-title">프로젝트 설명</p>
-      <p class="modal-section-title-content">
-        SW중심대학 공동 AI 경진대회 2023으로, 위성 dataset을 건물, 비건물로 segmentation 한다.
-        dacon에서 dice score를 기준으로 competition을 진행한다.
+    <!-- 동고동락 -->
+    <div class="project-modal" id="modal-project3">
+      <div class="project-modal-content">
+        <button class="project-modal-close">&times;</button>
+        <h3>동고동락</h3>
+        <img src="assets/modal/building_segmentation.png" alt="동고동락" />
+
+        <p class="modal-section-title">프로젝트 설명</p>
+        <p class="modal-section-title-content">
+          SW중심대학 공동 AI 경진대회 2023으로, 위성 dataset을 건물, 비건물로
+          segmentation 한다. dacon에서 dice score를 기준으로 competition을
+          진행한다.
         </p>
-  
-      <p class="modal-section-title">기술 스택</p>
-      <div class="tech-stack-inline">
-        <span>Pytorch</span>
-        <span>Python</span>
-        <span>NumPy</span>
-        <span>Pandas</span>
-        <span>Transformers</span>
-      </div>
-  
-      <p class="modal-section-title">기본 정보</p>
-      <div class="info-grid">
-        <div>참여인원</div><div>5명</div>
-        <div>기간</div><div>2023.06 ~ 2023.08</div>
-        <div>관련 링크</div><div><a href="https://github.com/leadawon/building_segmentation_dgdr" target="_blank" rel="noopener">
-            <img src="assets/skills/github.png" alt="github" />
-          </a></div>
-      </div>
-  
-      <p class="modal-section-title-line">수행 역할</p>
-      <ol class="modal-details-list number">
-        <li>
-            Preprocessing
-          <ul>
-            <li>라벨이 잘못된 데이터 취사선택(샘플링)</li>
-            <li>학습 데이터 슬라이싱 (test data의 해상도에 맞게 끔 설정)</li>
-          </ul>
-        </li>
-      </ol>
 
-    </div>
-  </div>
-
-  <!-- 응급실 혼잡도 알리미 -->
-  <div class="project-modal" id="modal-project4">
-    <div class="project-modal-content">
-      <button class="project-modal-close">&times;</button>
-      <h3>응급실 혼잡도 알리미</h3>
-      <img src="assets/modal/ER_SENTINEL_CtrlCV.png" alt="응급실 혼잡도 알리미" />
-  
-      <p class="modal-section-title">프로젝트 설명</p>
-      <p class="modal-section-title-content">
-        일반 병원이 진료를 보지 않는 시각에는, 필연적으로 응급실에 갈 수 밖에 없다. 하지만 환자 입장에서는 현재 어떤 응급실이 혼잡한지 알 수 없다. 
-        또한 소아과 담당 주치의가 없는 응급실에 위급한 소아 환자가 가게 되면, 진료를 봐주지 않는 문제가 발생하여 소위 말하는 “응급실 뺑뺑이” 현상이 일어나게 된다. 
-        이를 해결하기 위해, 응급실 혼잡도와 소아 진료가 가능한 응급실을 알려주는 웹/앱을 만들고자 했다.
-        </p>
-  
-      <p class="modal-section-title">기술 스택</p>
-      <div class="tech-stack-inline">
-        <span>React</span>
-        <span>Spring</span>
-        <span>Docker</span>
-      </div>
-  
-      <p class="modal-section-title">기본 정보</p>
-      <div class="info-grid">
-        <div>참여인원</div><div>4명 (FE 1, BE 3)</div>
-        <div>기간</div><div>2023.06 ~ 2023.08</div>
-        <div>관련 링크</div>
-        <div class="link-icons">
-          <a href="https://github.com/Jhsysng/ER_SENTINEL_CtrlCV" target="_blank" rel="noopener">
-            <img src="assets/skills/github.png" alt="github" />
-          </a>
-          <a href="https://www.youtube.com/watch?v=_ENEHk0_ZTU&t=40" target="_blank" rel="noopener">
-            <img src="assets/experience/youtube.png" alt="youtube" />
-          </a>
+        <p class="modal-section-title">기술 스택</p>
+        <div class="tech-stack-inline">
+          <span>Pytorch</span>
+          <span>Python</span>
+          <span>NumPy</span>
+          <span>Pandas</span>
+          <span>Transformers</span>
         </div>
+
+        <p class="modal-section-title">기본 정보</p>
+        <div class="info-grid">
+          <div>참여인원</div>
+          <div>5명</div>
+          <div>기간</div>
+          <div>2023.06 ~ 2023.08</div>
+          <div>관련 링크</div>
+          <div>
+            <a
+              href="https://github.com/leadawon/building_segmentation_dgdr"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/skills/github.png" alt="github" />
+            </a>
+          </div>
+        </div>
+
+        <p class="modal-section-title-line">수행 역할</p>
+        <ol class="modal-details-list number">
+          <li>
+            Preprocessing
+            <ul>
+              <li>라벨이 잘못된 데이터 취사선택(샘플링)</li>
+              <li>학습 데이터 슬라이싱 (test data의 해상도에 맞게 끔 설정)</li>
+            </ul>
+          </li>
+        </ol>
       </div>
-  
-      <p class="modal-section-title-line">수행 역할(FE, PM)</p>
-      <ol class="modal-details-list number">
-        <li>
-            기획 역할 수행
-          <ul>
-            <li>응급의료정보제공 이라는 앱에서도 보여주지 않는 “응급실 혼잡도”를 앱의 메인 정보로 설정하고, 프로젝트 기획을 시작함. 이에 프로젝트 개요서, 플로우 차트, IA(정보 구조도), 와이어 프레임, 디자인과 같은 작업을 전담하여 프로젝트를 구축함</li>
-          </ul>
-        </li>
-        <li>
-            React를 중심으로 FE 역할 수행
-          <ul>
-            <li>“지도 기준 응급실 찾기” 기능의 스크린에서 사용자의 웹/앱 화면의 크기에 따라 응급실 혼잡도 아이콘이 유동적으로 보일 수 있도록 함</li>
-            <li>Daum 지도 api를 활용하여 지도, 길찾기 등과 같은 위치 활용 기능에서 사용자의 현재 위치 탐색, 응급실까지의 길찾기를 수행할 수 있도록 함</li>
-          </ul>
-        </li>
-      </ol>
-
-      <p class="modal-section-title">활동 사진</p>
-      <img src="assets/modal/ER_SENTINEL_CtrlCV-playing.png" alt="응급실 혼잡도 알리미_활동사진" />
-
     </div>
-  </div>
 
-<!-- 블로그 -->
-  <section class="fade-in" id="blog">
-    <div class="experience-title">블로그</div>
-    <h2 class="experience-subtitle">
-      자세한 저의 경험과 생각들은<br>블로그에서 확인하실 수 있습니다.
-    </h2>
+    <!-- 응급실 혼잡도 알리미 -->
+    <div class="project-modal" id="modal-project4">
+      <div class="project-modal-content">
+        <button class="project-modal-close">&times;</button>
+        <h3>응급실 혼잡도 알리미</h3>
+        <img
+          src="assets/modal/ER_SENTINEL_CtrlCV.png"
+          alt="응급실 혼잡도 알리미"
+        />
 
-    <!-- 다른 카드들 반복 -->
-    <div class="blog-card-grid">
-        <a href="https://sillonjeu.tistory.com/entry/%EC%8B%A0%ED%95%9C%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C-%ED%94%84%EB%A1%9C-%EB%94%94%EC%A7%80%ED%84%B8-%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8-6%EA%B8%B0-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EA%B8%B0%EB%B0%98-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B8%B0%ED%9A%8D1" target="_blank" class="blog-card">
-            <img src="assets/blog/cloudservice.png" alt="클라우드 서비스" class="blog-card-thumbnail" />
-            <div class="blog-card-content">
-              <h3 class="blog-card-title">[신한투자증권]<br>프로 디지털 아카데미 6기 - 클라우드 기반 서비스 기획(1)</h3>
-              <div class="blog-card-date">2025.05.17</div>
-              <div class="blog-card-more">자세히 보기 &raquo;</div>
-            </div>
+        <p class="modal-section-title">프로젝트 설명</p>
+        <p class="modal-section-title-content">
+          일반 병원이 진료를 보지 않는 시각에는, 필연적으로 응급실에 갈 수 밖에
+          없다. 하지만 환자 입장에서는 현재 어떤 응급실이 혼잡한지 알 수 없다.
+          또한 소아과 담당 주치의가 없는 응급실에 위급한 소아 환자가 가게 되면,
+          진료를 봐주지 않는 문제가 발생하여 소위 말하는 “응급실 뺑뺑이” 현상이
+          일어나게 된다. 이를 해결하기 위해, 응급실 혼잡도와 소아 진료가 가능한
+          응급실을 알려주는 웹/앱을 만들고자 했다.
+        </p>
+
+        <p class="modal-section-title">기술 스택</p>
+        <div class="tech-stack-inline">
+          <span>React</span>
+          <span>Spring</span>
+          <span>Docker</span>
+        </div>
+
+        <p class="modal-section-title">기본 정보</p>
+        <div class="info-grid">
+          <div>참여인원</div>
+          <div>4명 (FE 1, BE 3)</div>
+          <div>기간</div>
+          <div>2023.06 ~ 2023.08</div>
+          <div>관련 링크</div>
+          <div class="link-icons">
+            <a
+              href="https://github.com/Jhsysng/ER_SENTINEL_CtrlCV"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/skills/github.png" alt="github" />
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=_ENEHk0_ZTU&t=40"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="assets/experience/youtube.png" alt="youtube" />
+            </a>
+          </div>
+        </div>
+
+        <p class="modal-section-title-line">수행 역할(FE, PM)</p>
+        <ol class="modal-details-list number">
+          <li>
+            기획 역할 수행
+            <ul>
+              <li>
+                응급의료정보제공 이라는 앱에서도 보여주지 않는 “응급실 혼잡도”를
+                앱의 메인 정보로 설정하고, 프로젝트 기획을 시작함. 이에 프로젝트
+                개요서, 플로우 차트, IA(정보 구조도), 와이어 프레임, 디자인과
+                같은 작업을 전담하여 프로젝트를 구축함
+              </li>
+            </ul>
+          </li>
+          <li>
+            React를 중심으로 FE 역할 수행
+            <ul>
+              <li>
+                “지도 기준 응급실 찾기” 기능의 스크린에서 사용자의 웹/앱 화면의
+                크기에 따라 응급실 혼잡도 아이콘이 유동적으로 보일 수 있도록 함
+              </li>
+              <li>
+                Daum 지도 api를 활용하여 지도, 길찾기 등과 같은 위치 활용
+                기능에서 사용자의 현재 위치 탐색, 응급실까지의 길찾기를 수행할
+                수 있도록 함
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <p class="modal-section-title">활동 사진</p>
+        <img
+          src="assets/modal/ER_SENTINEL_CtrlCV-playing.png"
+          alt="응급실 혼잡도 알리미_활동사진"
+        />
+      </div>
+    </div>
+
+    <!-- 블로그 -->
+    <section class="fade-in" id="blog">
+      <div class="experience-title">블로그</div>
+      <h2 class="experience-subtitle">
+        자세한 저의 경험과 생각들은<br />블로그에서 확인하실 수 있습니다.
+      </h2>
+
+      <!-- 다른 카드들 반복 -->
+      <div class="blog-card-grid">
+        <a
+          href="https://sillonjeu.tistory.com/entry/%EC%8B%A0%ED%95%9C%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C-%ED%94%84%EB%A1%9C-%EB%94%94%EC%A7%80%ED%84%B8-%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8-6%EA%B8%B0-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EA%B8%B0%EB%B0%98-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B8%B0%ED%9A%8D1"
+          target="_blank"
+          class="blog-card"
+        >
+          <img
+            src="assets/blog/cloudservice.png"
+            alt="클라우드 서비스"
+            class="blog-card-thumbnail"
+          />
+          <div class="blog-card-content">
+            <h3 class="blog-card-title">
+              [신한투자증권]<br />프로 디지털 아카데미 6기 - 클라우드 기반
+              서비스 기획(1)
+            </h3>
+            <div class="blog-card-date">2025.05.17</div>
+            <div class="blog-card-more">자세히 보기 &raquo;</div>
+          </div>
         </a>
 
-        <a href="https://sillonjeu.tistory.com/entry/%EC%8B%A0%ED%95%9C%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C-%ED%94%84%EB%A1%9C-%EB%94%94%EC%A7%80%ED%84%B8-%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8-6%EA%B8%B0-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0" target="_blank" class="blog-card">
-          <img src="assets/blog/shinhan.png" alt="신한투자증권" class="blog-card-thumbnail" />
+        <a
+          href="https://sillonjeu.tistory.com/entry/%EC%8B%A0%ED%95%9C%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C-%ED%94%84%EB%A1%9C-%EB%94%94%EC%A7%80%ED%84%B8-%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8-6%EA%B8%B0-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0"
+          target="_blank"
+          class="blog-card"
+        >
+          <img
+            src="assets/blog/shinhan.png"
+            alt="신한투자증권"
+            class="blog-card-thumbnail"
+          />
           <div class="blog-card-content">
-            <h3 class="blog-card-title">[신한투자증권]<br>프로 디지털 아카데미 6기 합격 후기</h3>
+            <h3 class="blog-card-title">
+              [신한투자증권]<br />프로 디지털 아카데미 6기 합격 후기
+            </h3>
             <div class="blog-card-date">2024.04.16</div>
             <div class="blog-card-more">자세히 보기 &raquo;</div>
           </div>
         </a>
-    
-        <a href="https://sillonjeu.tistory.com/entry/9oormthonUNIV-2%EA%B8%B0-%EB%B2%9A%EA%BD%83%ED%86%A4-%ED%9B%84%EA%B8%B0Kakao-x-Goorm-%EB%B4%84%EB%A9%8D-%EC%9A%B0%EC%88%98%EC%83%81" target="_blank" class="blog-card">
-          <img src="assets/blog/bommeong.png" alt="봄멍" class="blog-card-thumbnail" />
+
+        <a
+          href="https://sillonjeu.tistory.com/entry/9oormthonUNIV-2%EA%B8%B0-%EB%B2%9A%EA%BD%83%ED%86%A4-%ED%9B%84%EA%B8%B0Kakao-x-Goorm-%EB%B4%84%EB%A9%8D-%EC%9A%B0%EC%88%98%EC%83%81"
+          target="_blank"
+          class="blog-card"
+        >
+          <img
+            src="assets/blog/bommeong.png"
+            alt="봄멍"
+            class="blog-card-thumbnail"
+          />
           <div class="blog-card-content">
-            <h3 class="blog-card-title">[구름톤]<br>9oormthonUNIV 2기 벚꽃톤 후기(Kakao x Goorm, 봄멍, 우수상)</h3>
+            <h3 class="blog-card-title">
+              [구름톤]<br />9oormthonUNIV 2기 벚꽃톤 후기(Kakao x Goorm, 봄멍,
+              우수상)
+            </h3>
             <div class="blog-card-date">2024.08.06</div>
             <div class="blog-card-more">자세히 보기 &raquo;</div>
           </div>
         </a>
-    
-        <a href="https://sillonjeu.tistory.com/entry/Flutterapplicationjson-charsetutf-8-not-supported-%EC%97%90%EB%9F%AC" target="_blank" class="blog-card">
-          <img src="assets/blog/flutter.png" alt="플러터" class="blog-card-thumbnail" />
+
+        <a
+          href="https://sillonjeu.tistory.com/entry/Flutterapplicationjson-charsetutf-8-not-supported-%EC%97%90%EB%9F%AC"
+          target="_blank"
+          class="blog-card"
+        >
+          <img
+            src="assets/blog/flutter.png"
+            alt="플러터"
+            class="blog-card-thumbnail"
+          />
           <div class="blog-card-content">
-            <h3 class="blog-card-title">[Flutter]<br>'application/json charset=utf-8' not supported 에러</h3>
+            <h3 class="blog-card-title">
+              [Flutter]<br />'application/json charset=utf-8' not supported 에러
+            </h3>
             <div class="blog-card-date">2024.08.18</div>
             <div class="blog-card-more">자세히 보기 &raquo;</div>
           </div>
         </a>
-
       </div>
-  </section>
+    </section>
 
-<!-- 동료 평가 피드백 -->
-  <section class="fade-in" id="feedback">
-    <div class="experience-title">피드백</div>
-    <h2 class="experience-subtitle">
-        저와 함께했던 분들은 저를 어떻게 바라보셨을까요?<br>
+    <!-- 동료 평가 피드백 -->
+    <section class="fade-in" id="feedback">
+      <div class="experience-title">피드백</div>
+      <h2 class="experience-subtitle">
+        저와 함께했던 분들은 저를 어떻게 바라보셨을까요?<br />
         여러분의 솔직한 의견도 오른쪽 하단의 구글 폼을 통해 들려주세요.
-    </h2>
-    <img src="assets/feedback/feedback.png" alt="프로필 이미지"/>
-  
-    <div class="feedback-tags">
-      <span>#문학하는개발자</span>
-      <span>#실론즈</span>
-      <span>#보고서팔만대장경</span>
-      <span>#어시스트장인</span>
-    </div>
-    <button id="openReviewModal" class="review-btn">
-      팀원 리뷰 보기 <span>&rsaquo;</span>
-    </button>
-  </section>
-  
-  <!-- 리뷰 모달 -->
-  <div id="reviewModal" class="review-modal">
-    <div class="review-modal-content">
-      <button class="close-modal">&times;</button>
-      <div class="review-grid">
-        <div class="review-card">
-            <img src="assets/feedback/quote.png" alt="quote" class="quote-icon" /><br>
-            “높은 책임감과 성실함으로 프로젝트의 안정감을 만들어주는 동료셨습니다. 목표를 설계하는 사람이 있다면, 그 목표를 안전하게 실현해줄 사람도 있어야 합니다. 틈을 메꾸며 프로젝트를 안정적이게 만들어주셨던 은동님과는 다시 함께 일해보고 싶습니다.”<br><span>- 황*정 @인생책장</span>
-        </div>
-        <div class="review-card">
-            <img src="assets/feedback/quote.png" alt="quote" class="quote-icon" /><br>
-            “초반 기획부터 시작해서 중간중간 무엇을 해야 할지 정리를 잘 해주셨어요. 피그잼으로도 정리해주셔서 팀원들 모두 작업 방향을 이해하기 쉬웠고, 회의가 끝난 뒤에도 참고하기에 도움이 많이 됐어요. 특히 막히는 부분이 생겼을 때는 먼저 아이디어를 제시해주시고, '이렇게 해보면 어떨까?'처럼 함께 고민해주셔서 문제 해결에 큰 힘이 됐습니다. 덕분에 일의 우선순위를 명확히 잡을 수 있었고, 전체적으로 작업 속도를 내는 데도 많은 도움이 됐습니다.”<br><span>- 홍*동 @프디아6기</span>
-        </div>
-        <div class="review-card">
-            <img src="assets/feedback/quote.png" alt="quote" class="quote-icon" /><br>
-            “짧은 기간 동안 프로젝트를 함께 진행했지만, 그 과정에서 기획부터 개발까지 유기적으로 협력할 수 있었던 소중한 경험이었습니다. 특히 은동님은 개발을 진행하면서도 항상 프로젝트의 전반적인 방향성과 목표를 염두에 두고, 정리하는 습관을 바탕으로 흐름을 잘 잡아주는 역할을 해주셨습니다. 이러한 태도 덕분에 전체 팀이 방향을 잃지 않고 효율적으로 협업할 수 있었고, 개발 중간에 발생하는 이슈들에 대해서도 빠르게 인지하고 유연하게 대응할 수 있었습니다. 실력은 물론이고 커뮤니케이션 능력까지 갖춘 동료라 함께 일하는 내내 매우 편하고 즐거웠습니다.”<br><span>- 홍*동 @프디아6기</span>
-        </div>
-        <div class="review-card">
-            <img src="assets/feedback/quote.png" alt="quote" class="quote-icon" /><br>
-            “여러분의 피드백을 기다리고 있어요!”<br><span>- *** @</span>
-        </div>
-        <div class="review-card">
-            <img src="assets/feedback/quote.png" alt="quote" class="quote-icon" /><br>
-            “여러분의 피드백을 기다리고 있어요!”<br><span>- *** @</span>
-        </div>
-        <div class="review-card">
-            <img src="assets/feedback/quote.png" alt="quote" class="quote-icon" /><br>
-            “여러분의 피드백을 기다리고 있어요!”<br><span>- *** @</span>
+      </h2>
+      <img src="assets/feedback/feedback.png" alt="프로필 이미지" />
+
+      <div class="feedback-tags">
+        <span>#문학하는개발자</span>
+        <span>#실론즈</span>
+        <span>#보고서팔만대장경</span>
+        <span>#어시스트장인</span>
+      </div>
+      <button id="openReviewModal" class="review-btn">
+        팀원 리뷰 보기 <span>&rsaquo;</span>
+      </button>
+    </section>
+
+    <!-- 리뷰 모달 -->
+    <div id="reviewModal" class="review-modal">
+      <div class="review-modal-content">
+        <button class="close-modal">&times;</button>
+        <div class="review-grid">
+          <div class="review-card">
+            <img
+              src="assets/feedback/quote.png"
+              alt="quote"
+              class="quote-icon"
+            /><br />
+            “높은 책임감과 성실함으로 프로젝트의 안정감을 만들어주는
+            동료셨습니다. 목표를 설계하는 사람이 있다면, 그 목표를 안전하게
+            실현해줄 사람도 있어야 합니다. 틈을 메꾸며 프로젝트를 안정적이게
+            만들어주셨던 은동님과는 다시 함께 일해보고 싶습니다.”<br /><span
+              >- 황*정 @인생책장</span
+            >
+          </div>
+          <div class="review-card">
+            <img
+              src="assets/feedback/quote.png"
+              alt="quote"
+              class="quote-icon"
+            /><br />
+            “초반 기획부터 시작해서 중간중간 무엇을 해야 할지 정리를 잘
+            해주셨어요. 피그잼으로도 정리해주셔서 팀원들 모두 작업 방향을
+            이해하기 쉬웠고, 회의가 끝난 뒤에도 참고하기에 도움이 많이 됐어요.
+            특히 막히는 부분이 생겼을 때는 먼저 아이디어를 제시해주시고, '이렇게
+            해보면 어떨까?'처럼 함께 고민해주셔서 문제 해결에 큰 힘이 됐습니다.
+            덕분에 일의 우선순위를 명확히 잡을 수 있었고, 전체적으로 작업 속도를
+            내는 데도 많은 도움이 됐습니다.”<br /><span
+              >- 홍*동 @프디아6기</span
+            >
+          </div>
+          <div class="review-card">
+            <img
+              src="assets/feedback/quote.png"
+              alt="quote"
+              class="quote-icon"
+            /><br />
+            “짧은 기간 동안 프로젝트를 함께 진행했지만, 그 과정에서 기획부터
+            개발까지 유기적으로 협력할 수 있었던 소중한 경험이었습니다. 특히
+            은동님은 개발을 진행하면서도 항상 프로젝트의 전반적인 방향성과
+            목표를 염두에 두고, 정리하는 습관을 바탕으로 흐름을 잘 잡아주는
+            역할을 해주셨습니다. 이러한 태도 덕분에 전체 팀이 방향을 잃지 않고
+            효율적으로 협업할 수 있었고, 개발 중간에 발생하는 이슈들에 대해서도
+            빠르게 인지하고 유연하게 대응할 수 있었습니다. 실력은 물론이고
+            커뮤니케이션 능력까지 갖춘 동료라 함께 일하는 내내 매우 편하고
+            즐거웠습니다.”<br /><span>- 김*규 @프디아6기</span>
+          </div>
+          <div class="review-card">
+            <img
+              src="assets/feedback/quote.png"
+              alt="quote"
+              class="quote-icon"
+            /><br />
+            “여러분의 피드백을 기다리고 있어요!”<br /><span>- *** @</span>
+          </div>
+          <div class="review-card">
+            <img
+              src="assets/feedback/quote.png"
+              alt="quote"
+              class="quote-icon"
+            /><br />
+            “여러분의 피드백을 기다리고 있어요!”<br /><span>- *** @</span>
+          </div>
+          <div class="review-card">
+            <img
+              src="assets/feedback/quote.png"
+              alt="quote"
+              class="quote-icon"
+            /><br />
+            “여러분의 피드백을 기다리고 있어요!”<br /><span>- *** @</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <!-- 오른쪽 하단 고정 버튼 -->
-  <div class="floating-feedback-wrapper">
-    <a href="https://forms.gle/9v5Qz761VXcg1wFcA" target="_blank" class="floating-feedback-btn">
-      <span class="feedback-tooltip">피드백 주기</span>
-      <img src="assets/feedback/googleform.png" alt="feedback button" />
-    </a>
-  </div>
 
-<!-- 하단 -->
-  <footer class="fade-in">
-    <p>감사합니다!<br>더 궁금한 점이 있다면 편하게 연락주세요.</p>
-    <br>
-    <p>
-      <a href="mailto:pius0316@naver.com">Email</a>
-      <a href="https://github.com/sillonjeu">GitHub</a>
-    </p>
-  </footer>
+    <!-- 오른쪽 하단 고정 버튼 -->
+    <div class="floating-feedback-wrapper">
+      <a
+        href="https://forms.gle/9v5Qz761VXcg1wFcA"
+        target="_blank"
+        class="floating-feedback-btn"
+      >
+        <span class="feedback-tooltip">피드백 주기</span>
+        <img src="assets/feedback/googleform.png" alt="feedback button" />
+      </a>
+    </div>
 
-<!-- js 스크립트 -->
-  <script>
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+    <!-- 하단 -->
+    <footer class="fade-in">
+      <p>감사합니다!<br />더 궁금한 점이 있다면 편하게 연락주세요.</p>
+      <br />
+      <p>
+        <a href="mailto:pius0316@naver.com">Email</a>
+        <a href="https://github.com/sillonjeu">GitHub</a>
+      </p>
+    </footer>
+
+    <!-- js 스크립트 -->
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
       });
-    });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    
-    document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('.project-card').forEach(card => {
-      card.addEventListener('click', () => {
-        const targetId = card.dataset.project;
-        document.querySelectorAll('.project-modal').forEach(m => m.classList.remove('active'));
-        document.getElementById(`modal-${targetId}`).classList.add('active');
-        card.classList.add('active');
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".project-card").forEach((card) => {
+          card.addEventListener("click", () => {
+            const targetId = card.dataset.project;
+            document
+              .querySelectorAll(".project-modal")
+              .forEach((m) => m.classList.remove("active"));
+            document
+              .getElementById(`modal-${targetId}`)
+              .classList.add("active");
+            card.classList.add("active");
+          });
+        });
+
+        document.querySelectorAll(".project-modal-close").forEach((button) => {
+          button.addEventListener("click", () => {
+            document
+              .querySelectorAll(".project-modal")
+              .forEach((m) => m.classList.remove("active"));
+            document
+              .querySelectorAll(".project-card")
+              .forEach((c) => c.classList.remove("active"));
+          });
+        });
+
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            document
+              .querySelectorAll(".project-modal")
+              .forEach((m) => m.classList.remove("active"));
+            document
+              .querySelectorAll(".project-card")
+              .forEach((c) => c.classList.remove("active"));
+          }
+        });
       });
-    });
 
-    document.querySelectorAll('.project-modal-close').forEach(button => {
-      button.addEventListener('click', () => {
-        document.querySelectorAll('.project-modal').forEach(m => m.classList.remove('active'));
-        document.querySelectorAll('.project-card').forEach(c => c.classList.remove('active'));
-      });
-    });
+      const openBtn = document.getElementById("openReviewModal");
+      const modal = document.getElementById("reviewModal");
+      const closeBtn = modal.querySelector(".close-modal");
 
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.project-modal').forEach(m => m.classList.remove('active'));
-        document.querySelectorAll('.project-card').forEach(c => c.classList.remove('active'));
-      }
-    });
-  });
-
-    const openBtn = document.getElementById("openReviewModal");
-    const modal = document.getElementById("reviewModal");
-    const closeBtn = modal.querySelector(".close-modal");
-
-    openBtn.addEventListener("click", () => {
+      openBtn.addEventListener("click", () => {
         modal.classList.add("active");
-    });
+      });
 
-    closeBtn.addEventListener("click", () => {
+      closeBtn.addEventListener("click", () => {
         modal.classList.remove("active");
-    });
+      });
 
-    // 바깥 영역 클릭 시 닫기
-    modal.addEventListener("click", (e) => {
+      // 바깥 영역 클릭 시 닫기
+      modal.addEventListener("click", (e) => {
         if (e.target === modal) {
-        modal.classList.remove("active");
+          modal.classList.remove("active");
         }
-    });
-  </script>
-</body>
+      });
+    </script>
+  </body>
 </html>
